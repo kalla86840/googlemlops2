@@ -1,0 +1,5 @@
+google-cloud-aiplatform>=1.49.0
+pandas
+scikit-learn
+joblib
+gcsfs

@@ -1,0 +1,8 @@
+steps:
+- name: python:3.11
+  entrypoint: bash
+  args:
+    - -c
+    - |
+      pip install -r requirements.txt
+      python cd/submit_vertex_job.py         --project=inner-domain-397315         --region=us-west2         --staging-bucket=gs://inner-domain-397315         --data-uri=gs://inner-domain-397315/datasets/calls_sales_dataset.csv         --endpoint-display-name=calls-sales-endpoint
